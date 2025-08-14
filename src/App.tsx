@@ -1,14 +1,14 @@
-import { useState } from 'react'
-import './App.css'
+import { Route, Routes } from "react-router-dom";
+import Home from "./routes/Home";
+import Settings from "./routes/Settings";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
-      
-    </>
-  )
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/settings" element={<Settings />} />
+      <Route path="*" element={<Home />} />
+    </Routes>
+  );
 }
 
-export default App
