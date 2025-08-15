@@ -37,7 +37,7 @@ export default function SearchBar({ onSelect }: Props) {
       <input
         id="search"
         className="input"
-        placeholder="e.g., Johannesburg, London, Tokyo"
+        placeholder="e.g., Johannesburg, Roodepoort, Cape Town"
         value={q}
         onChange={(e) => setQ(e.target.value)}
       />

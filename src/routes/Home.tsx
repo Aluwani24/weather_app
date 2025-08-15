@@ -69,7 +69,7 @@ export default function Home() {
                 setLoading(false);
             }
         })();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+       
     }, [active?.id, settings.units]);
 
     // Fetch alerts and fire a local notification (progressive)
